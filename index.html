@@ -3,36 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Swimm Workspace PWA</title>
-  
-  <!-- Manifest -->
+  <title>Swimm PWA Launcher</title>
+
   <link rel="manifest" href="manifest.json" />
-
-  <!-- Theme color -->
-  <meta name="theme-color" content="#317EFB" />
-
-  <!-- Basic styles to fill viewport -->
-  <style>
-    html, body {
-      margin: 0; padding: 0; height: 100%;
-      overflow: hidden;
-    }
-    iframe {
-      border: none;
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
-</head>
-<body>
-  <iframe src="https://app.swimm.io/workspaces/UujgJYN5Qw7nrn4QB2zZ" title="Swimm Workspace"></iframe>
+  <meta name="theme-color" content="#5865F2" />
 
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js').then(() => {
-        console.log('Service Worker Registered');
-      }).catch(console.error);
-    }
+    // Redirect to Swimm workspace
+    window.location.replace("https://app.swimm.io/workspaces/UujgJYN5Qw7nrn4QB2zZ");
   </script>
+</head>
+<body>
+  <p>Redirecting to Swimm...</p>
 </body>
 </html>
